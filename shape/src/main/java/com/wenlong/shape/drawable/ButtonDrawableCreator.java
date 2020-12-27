@@ -27,9 +27,9 @@ public class ButtonDrawableCreator implements Creator<StateListDrawable> {
         for (int i = 0; i < buttonTa.getIndexCount(); i++) {
             int attr = buttonTa.getIndex(i);
 
-            if (attr == R.styleable.background_button_drawable_yx_checked_button_drawable) {
+            if (attr == R.styleable.background_button_drawable_ss_checked_button_drawable) {
                 setSelectorDrawable(typedArray, buttonTa, stateListDrawable, attr, android.R.attr.state_checked);
-            } else if (attr == R.styleable.background_button_drawable_yx_unChecked_button_drawable) {
+            } else if (attr == R.styleable.background_button_drawable_ss_unChecked_button_drawable) {
                 setSelectorDrawable(typedArray, buttonTa, stateListDrawable, attr, -android.R.attr.state_checked);
             }
         }

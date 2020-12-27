@@ -25,12 +25,12 @@ public class PressDrawableCreator implements Creator<StateListDrawable> {
         for (int i = 0; i < pressTa.getIndexCount(); i++) {
             int attr = pressTa.getIndex(i);
 
-            if (attr == R.styleable.background_press_yx_pressed_color) {
+            if (attr == R.styleable.background_press_ss_pressed_color) {
                 int color = pressTa.getColor(attr, 0);
                 GradientDrawable pressDrawable = DrawableFactory.getDrawable(typedArray);
                 pressDrawable.setColor(color);
                 stateListDrawable.addState(new int[]{android.R.attr.state_pressed}, pressDrawable);
-            } else if (attr == R.styleable.background_press_yx_unpressed_color) {
+            } else if (attr == R.styleable.background_press_ss_unpressed_color) {
                 int color = pressTa.getColor(attr, 0);
                 drawable.setColor(color);
                 stateListDrawable.addState(new int[]{-android.R.attr.state_pressed}, drawable);

@@ -1,3 +1,3 @@
 include ':shape'
 include ':app'
-rootProject.name = "DrawLibrary"
+rootProject.name = "super-shape"

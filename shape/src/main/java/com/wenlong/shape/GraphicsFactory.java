@@ -88,7 +88,7 @@ public class GraphicsFactory implements LayoutInflater.Factory2 {
         TypedArray pressTypedArray = context.obtainStyledAttributes(attrs, R.styleable.background_press);
         TypedArray selectorTypedArray = context.obtainStyledAttributes(attrs, R.styleable.background_selector);
         TypedArray textTypedArray = context.obtainStyledAttributes(attrs, R.styleable.text_selector);
-        TypedArray otherTypedArray = context.obtainStyledAttributes(attrs, R.styleable.yx_other);
+        TypedArray otherTypedArray = context.obtainStyledAttributes(attrs, R.styleable.ss_other);
         TypedArray buttonTypedArray = context.obtainStyledAttributes(attrs, R.styleable.background_button_drawable);
         TypedArray multiSelectorTypedArray = context.obtainStyledAttributes(attrs, R.styleable.background_multi_selector);
         TypedArray multiTextTypedArray = context.obtainStyledAttributes(attrs, R.styleable.background_multi_selector_text);
@@ -158,9 +158,9 @@ public class GraphicsFactory implements LayoutInflater.Factory2 {
     private static void setDrawable(Drawable drawable, View view, TypedArray otherTa, TypedArray typedArray) {
 
         if (view instanceof TextView) {
-            if (otherTa.hasValue(R.styleable.yx_other_yx_position)) {
+            if (otherTa.hasValue(R.styleable.ss_other_ss_position)) {
                 drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                final int position = otherTa.getInt(R.styleable.yx_other_yx_position, 0);
+                final int position = otherTa.getInt(R.styleable.ss_other_ss_position, 0);
                 final TextView textView = (TextView) view;
                 switch (position) {
                     case LEFT:
@@ -186,10 +186,10 @@ public class GraphicsFactory implements LayoutInflater.Factory2 {
     }
 
     private static void setBackground(Drawable drawable, View view, TypedArray typedArray) {
-        if (typedArray.hasValue(R.styleable.background_yx_stroke_width) && typedArray.hasValue(R.styleable.background_yx_stroke_position)) {
+        if (typedArray.hasValue(R.styleable.background_ss_stroke_width) && typedArray.hasValue(R.styleable.background_ss_stroke_position)) {
 
-            float width = typedArray.getDimension(R.styleable.background_yx_stroke_width, 0f);
-            int position = typedArray.getInt(R.styleable.background_yx_stroke_position, 0);
+            float width = typedArray.getDimension(R.styleable.background_ss_stroke_width, 0f);
+            int position = typedArray.getInt(R.styleable.background_ss_stroke_position, 0);
             float leftValue = hasStatus(position, LEFT) ? width : -width;
             float topValue = hasStatus(position, TOP) ? width : -width;
             float rightValue = hasStatus(position, RIGHT) ? width : -width;

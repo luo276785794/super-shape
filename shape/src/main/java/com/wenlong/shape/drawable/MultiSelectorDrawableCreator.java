@@ -33,17 +33,17 @@ public class MultiSelectorDrawableCreator implements Creator<StateListDrawable> 
         for (int i = 0; i < selectorTa.getIndexCount(); i++) {
             int attr = selectorTa.getIndex(i);
 
-            if (attr == R.styleable.background_multi_selector_yx_multi_selector1) {
+            if (attr == R.styleable.background_multi_selector_ss_multi_selector1) {
                 addState(stateListDrawable, attr);
-            } else if (attr == R.styleable.background_multi_selector_yx_multi_selector2) {
+            } else if (attr == R.styleable.background_multi_selector_ss_multi_selector2) {
                 addState(stateListDrawable, attr);
-            } else if (attr == R.styleable.background_multi_selector_yx_multi_selector3) {
+            } else if (attr == R.styleable.background_multi_selector_ss_multi_selector3) {
                 addState(stateListDrawable, attr);
-            } else if (attr == R.styleable.background_multi_selector_yx_multi_selector4) {
+            } else if (attr == R.styleable.background_multi_selector_ss_multi_selector4) {
                 addState(stateListDrawable, attr);
-            } else if (attr == R.styleable.background_multi_selector_yx_multi_selector5) {
+            } else if (attr == R.styleable.background_multi_selector_ss_multi_selector5) {
                 addState(stateListDrawable, attr);
-            } else if (attr == R.styleable.background_multi_selector_yx_multi_selector6) {
+            } else if (attr == R.styleable.background_multi_selector_ss_multi_selector6) {
                 addState(stateListDrawable, attr);
             }
         }
@@ -83,7 +83,7 @@ public class MultiSelectorDrawableCreator implements Creator<StateListDrawable> 
                 }else {
                     MultiSelector multiSelector = MultiSelector.getMultiAttr(attrStr.replace("-", ""));
                     if(multiSelector == null){
-                        throw new IllegalArgumentException("the attribute of yx_multi_selector only support " +
+                        throw new IllegalArgumentException("the attribute of ss_multi_selector only support " +
                                 "state_checkable, state_checked, state_enabled, state_selected, state_pressed, state_focused, " +
                                 "state_hovered, state_activated");
                     }

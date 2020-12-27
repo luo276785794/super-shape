@@ -16,10 +16,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:yx_corners_radius="2dp"
-        app:yx_solid_color="@android:color/holo_green_dark"
-        app:yx_stroke_color="@android:color/background_dark"
-        app:yx_stroke_width="5dp"
+        app:ss_corners_radius="2dp"
+        app:ss_solid_color="@android:color/holo_green_dark"
+        app:ss_stroke_color="@android:color/background_dark"
+        app:ss_stroke_width="5dp"
         android:padding="15dp"
         tools:ignore="MissingPrefix" />
 
@@ -31,11 +31,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:yx_corners_radius="2dp"
+        app:ss_corners_radius="2dp"
         android:padding="15dp"
-        app:yx_solid_color="@android:color/holo_green_dark"
-        app:yx_stroke_color="@android:color/background_dark"
-        app:yx_stroke_width="5dp"
+        app:ss_solid_color="@android:color/holo_green_dark"
+        app:ss_stroke_color="@android:color/background_dark"
+        app:ss_stroke_width="5dp"
         tools:ignore="MissingPrefix" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
